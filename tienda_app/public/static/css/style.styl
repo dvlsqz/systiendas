@@ -1,0 +1,242 @@
+color0 = #2caaff
+color1 = #76c8ff
+color2 = #fdd700
+color3 = #334F9A
+color4 = #222222
+
+body, html
+    margin: 0px
+    padding: 0px
+
+body 
+    background-color: #fff
+    font-size: 14px
+    font-family: 'Montserrat', sans-serif;
+
+.blur
+    filter: blur(2px)
+.mtop8
+    margin-top: 8px
+.mtop16
+    margin-top: 16px
+.mtop32
+    margin-top: 32px
+.shadow 
+    -webkit-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.08);
+    -moz-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.08);
+    box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.08);
+
+.loader
+    background-color: #fff
+    background-size: cover
+    background-position: center center
+    height: 100vh
+    position: fixed
+    width: 100%
+    z-index: 999
+    .top
+        position: absolute
+        left: 0px
+        top: 0px
+        width: 100%
+        img 
+            display: block
+            width: 100%
+    .footer
+        position: absolute
+        left: 0px
+        bottom 16px
+        width: 100%
+        img 
+            display: block
+            margin: 0px auto
+            width: 120px
+    .logo
+        position: absolute
+        left: calc(50% - 70px)
+        top: calc(50% - 70px)
+        width: 140px
+        img 
+            display: block
+            margin: 0px auto
+            width: 80%
+        .progress
+            background-color: #fff
+            margin: 0px auto
+            width: 80%
+            .indeterminate
+                background-color: color1
+
+.os_modal
+    align-items: center
+    background-color: rgba(0, 0, 0, .5)
+    color #fff
+    display: none
+    justify-content: center
+    height: 100vh
+    position: fixed
+    width: 100%
+    z-index: 1000
+    .os_modal_inside
+        background-color: #fff
+        border-radius: 12px
+        width: 86%
+    .os_modal_content
+        color: #333
+        box-sizing: border-box
+        display: block
+        padding: 24px
+        width: 100%
+        overflow: hidden
+.loader_action
+    align-items: center
+    background-color: rgba(0, 0, 0, .5)
+    color #fff
+    display: none
+    justify-content: center
+    height: 100vh
+    position: fixed
+    width: 100%
+    z-index: 999
+    .action
+        align-items: center
+        background-color: #fff
+        border-radius: 8px
+        box-sizing: border-box
+        padding: 16px
+        overflow: hidden
+        width: 86%
+        .col
+            display: block
+            color: #333
+            float: left
+            &:first-child
+                width: 15%
+                img
+                    display: block 
+                    width: 100%                    
+            &:last-child
+                margin-left: 5%
+                position: relative
+                width: 80%
+                span
+                    box-sizing: border-box
+                    display: block
+                    margin-top: 12px
+                    width: 100%
+
+.loader_action_animation_show
+    animation-timing-function: ease-in-out
+    animation: action_show 0.5s forwards
+
+.loader_action_animation_hide
+    animation-timing-function: ease-in-out
+    animation: action_hide 0.5s forwards
+
+nav
+    background-color: #fff
+    box-shadow: none !important
+    .brand-logo
+        padding: 12px
+        img 
+            display: block
+            height: 32px    
+            width: 32px
+    .sidenav-trigger
+        height: auto !important
+        line-height: normal
+        padding-top: 16px
+        svg  
+            fill: color3
+            height: 22px
+            width: 22px
+
+.wrapper
+    background-color: #f6f6f6
+    border-radius: 32px 32px 0px 0px
+    min-height: calc(100vh - 56px)
+    .inside
+        padding: 24px
+.page
+    .ccard
+        background-color: #fff
+        border-radius: 16px
+    h2.title
+        display: block
+        font-size: 1.3em
+        font-weight: 700
+        margin: 0px
+        padding: 0px
+        svg 
+            display: block
+            fill: color3
+            height: 24px
+            margin: 0px auto
+            margin-bottom: 8px
+            width: 24px
+    .tcenter
+        text-align: center
+    .form   
+        label
+            display: block
+            font-size: .9em
+            width: 100
+        .group
+            position: relative
+            i  
+                position: absolute
+                font-size: 1.2em
+                left: 8px
+                top: 12px
+            .input  
+                box-sizing: border-box !important
+                padding-left: 32px
+                &:focus
+                    border-bottom: 1px solid color0
+                    box-shadow: none !important
+        .btn
+            background-color: color0
+            border-radius: 20.4px
+            box-shadow: none
+            display: block
+            font-size: .9em
+            height: auto
+            line-height: initial
+            padding: 12px
+            width: 100%
+            i 
+                position: relative 
+                top: 2px
+        .btns
+            border-top: 1px solid #f0f0f0
+            margin-top: 16px
+            padding-top: 16px
+            .btn 
+                border-radius: 20px
+                padding: 10px
+        .btn-green
+            background-color: #f7555d
+        .btn-facebook
+            background-color: #4267b2
+        .btn-link
+            display: block
+            font-size: .9em
+            width: 100%
+
+@keyframes action_show{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes action_hide{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

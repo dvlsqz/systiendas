@@ -1,0 +1,25 @@
+<?php 
+return [ 
+'name' => 'CMS',
+'website' => '#',
+'company_phone' => '37569098',
+'email_from' => '',
+'maintenance_mode' => '0',
+'currency' => 'Q',
+'shop_min_amount' => '25',
+'shipping_method' => '2',
+'shipping_default_value' => '35',
+'shipping_amount_min' => '1000',
+'social_facebook' => '#',
+'social_instagram' => '#',
+'social_twitter' => '#',
+'social_youtube' => '#',
+'social_whatsapp' => '#',
+'payment_method_cash' => '0',
+'payment_method_paypal' => '0',
+'products_per_page' => '5',
+'products_per_page_random' => '10',
+'server_uploads_paths' => 'C:/xampp/htdocs/cms/public/uploads',
+'server_uploads_user_paths' => 'C:/xampp/htdocs/cms/public/uploads_users',
+] 
+?> 
